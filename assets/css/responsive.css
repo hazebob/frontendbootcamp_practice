@@ -1,0 +1,110 @@
+@import url('reset.css');
+
+.mqtest {
+	background: #000;
+	padding: 50px;
+}
+
+.mqtest h1 {
+	color:#fff;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+	.mqtest {
+		background:red;
+	}
+
+	.mqtest h1 {
+		color:#000;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.mqtest {
+		background:blue;
+	}
+
+	.mqtest h1 {
+		color:#000;
+		font-size: 14px;
+	}
+}
+
+@media print {
+	.mq h1 {font-size: 200px;}
+}
+
+
+
+/*
+*/
+
+.container {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.container .col-1 {
+	float: none;
+	width: 97.91666%;
+	margin: 0 1.0416%;
+	height: 100px;
+	background: #50e3c2;
+}
+
+.container .col-3 {
+	float: left;
+	width: 31.25%;
+	margin: 0 1.0416%;
+	padding: 20px 2.083%;
+
+	box-sizing: border-box;
+	background: #20c997;
+	line-height: 1.5;
+	color:#fff;
+}
+
+.container img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container .pin {
+	width:100px;
+	height:150px;
+	background:url(../images/responsive/pin_small.png) no-repeat 0 0;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.container .kiwi {
+	fill: #94d31b;
+}
+
+@media screen and (max-width: 860px) {
+	.container .col-3 {
+		width: 47.916%;
+		margin-bottom: 20px;
+	}
+
+	.container .pin {
+		background-image:url(../images/responsive/pin_large.png);
+		background-size: 100% auto;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container .col-3 {
+		float: none;
+		width: 97.91666%;
+		margin-bottom: 20px;
+	}
+}

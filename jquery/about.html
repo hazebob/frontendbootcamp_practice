@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>hft</title>
+	<link rel="stylesheet" href="../assets/css/jquery.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="../assets/js/headerAndFooter.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			HAF.load({
+				header:'header',
+				footer:'footer',
+				sidebar:'sidebar'
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+<header id="header">
+</header>
+
+<main id="content">
+	컨텐츠 내용(가변)
+	<aside id="sidebar"></aside>
+</main>
+
+<footer id="footer">
+</footer>
+
+<!-- <div class="grid">
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+</div> -->
+
+</body>
+</html>

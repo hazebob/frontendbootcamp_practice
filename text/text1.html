@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>text</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/text.css">
+</head>
+<body>
+
+<article class="article">
+	<h1>CSS 애니메이션, 어떻게 시작할까</h1>
+
+	<div class="meta">2017년 8월 1일, 알파고 작성</div>
+
+	<p>html에 내용을 담고, css에 디자인(스타일)을 담을 겁니다. 당장 직접 작성하기는 어려우니 예제(<a href="https://codepen.io/yunkimoon/pen/BZEYgY">https://codepen.io/yunkimoon/pen/BZEYgY</a>)의 html과 css코드를 그대로 복사합니다. 코드의 주석(회색글씨)을 확인해 봅니다. 요약하면 아래와 같습니다.</p>
+
+	<ul>
+		<li>가장 바깥의 파란 배경 상자</li>
+		<li>이미지와 그걸 담고 있는 상자</li>
+		<li>파란 배경 상자에 hover(마우스 오버 이벤트)를 하면,</li>
+		<li>left 포지션을 2%에서 80%로 변경</li>
+	</ul>
+
+	<blockquote>
+		여기서 중요한 건 .box상자에 설정된<br>
+		transition이라는 속성입니다.
+	</blockquote>
+
+	<p>transition은 딱딱한 움직임을 부드럽게 해줍니다. 여기서는 position left를 2%에서 80%로 부드럽게 바꿔주었습니다. 위치뿐만 아니라 색상(color, background), 크기(width, height)도 자연스럽게 바꿔주는 속성입니다. “all 3s”라는 값을 가지고 있는데 “모든 변경사항에 대해 3초 동안 움직여라”라는 의미입니다.</p>
+
+	<div class="columns">
+		<p class="col-2">
+			<strong>Rotate</strong>
+
+			대상에 각도 값을 설정합니다. 즉, 주어진 값만큼 회전합니다. 첫 번째 예제와 조금 다른 부분은 :hover { }에 작성된 내용입니다. transform:rotate(360deg)에서 rotate는 회전을 뜻하고, 360deg는 각도입니다. 즉, 360도(한 바퀴)만큼 회전하라는 의미입니다. 미리 transition이 걸려있었기 때문에 부드럽게 회전하는 모습을 볼 수 있습니다.
+		</p>
+		<p class="col-2 col-2-2">
+			<strong>scale</strong>
+
+			대상의 크기를 설정합니다. 즉, 주어진 값만큼 늘어나거나 줄어듭니다. 값은 가로 값, 세로 값을 차례로 줍니다. transform:scale(1.5, 2)에서 scale은 크기를 뜻하고, 1.5와 2는 각각 가로값, 세로값을 뜻합니다. 가로는 1.5배가 늘어나고 세로는 2배가 늘어납니다. 그래서 그림은 세로로 긴 비율로 보입니다.
+		</p>
+	</div>
+
+</article>
+
+</body>
+</html>

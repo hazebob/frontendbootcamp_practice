@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>isotope</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+	<script src="../assets/js/isotope.pkgd.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/isotope.css">
+	<script>
+		$(document).ready(function () {
+
+			$('.grid').isotope({
+				itemSelector:'.grid-item',
+				masonry: {
+					columWidth:100
+				}
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div class="grid">
+		<div class="grid-item">
+			1
+		</div>
+		<div class="grid-item double"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item double"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item double"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+	</div>
+
+</body>
+</html>

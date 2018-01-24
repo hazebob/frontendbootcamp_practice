@@ -1,0 +1,55 @@
+// sass
+
+@import 'reset.css';
+
+$blue : #3e81f6;
+$green : #00d2bc;
+$bg : #F4F4F5;
+$lg : #e6e6eb;
+$dg : #606060;
+
+@mixin ani($duration) {
+	transition: all ease-in $duration;
+}
+
+.box {
+	background: $lg;
+	@include ani(.3s);
+
+	h1 {
+		font-size: 50px;
+		color:$blue;
+	}
+}
+
+$full: 90%;
+$gutter: 3%;
+
+@mixin griditem($num) {
+	float: left;
+	width: $full / $num - $gutter;
+	margin:0 $gutter / 2;
+}
+
+.grid {
+	width: $full;
+	margin:100px auto;
+
+	.col-3 {
+		@include griditem(3);
+	}
+
+	.col-4 {
+		@include griditem(4);
+	}
+}
+
+.col-3,
+.col-4 {
+	height: 50px;
+	background: $blue;
+}
+
+
+
+

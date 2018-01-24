@@ -1,0 +1,295 @@
+@import url('reset.css');
+
+.article {
+	width: 600px;
+	margin: 50px auto;
+}
+
+.article h1 {
+	font-size: 22px;
+	color: #364fc7;
+	padding: 0 0 27px 0;
+}
+
+.article .meta {
+	font-size: 15px;
+	color:#adb5bd;
+	padding: 0 0 27px 0;
+}
+
+.article p {
+	font-size: 16px;
+	color:#000;
+	line-height: 1.5;
+	padding: 10px 0;
+}
+
+.article p a {
+	color: #364fc7;
+	text-decoration: underline;
+}
+
+.article ul {
+	padding: 10px 0;
+}
+
+.article ul li {
+	display: block;
+	padding: 7px 0 7px 20px;
+	background: url(../images/text/bullet.png) 0 50% no-repeat;
+}
+
+.article blockquote {
+	font-size: 18px;
+	line-height: 1.33;
+	padding: 22px 17px;
+	margin: 20px 0;
+	background: #f1f3f5;
+	border-left: 3px solid #ced4da;
+}
+
+.article .columns {
+	overflow: hidden;
+	border-top: 1px solid #91a7ff;
+	padding: 10px 0 0 0;
+	margin:10px 0 0 0;
+}
+
+.article .columns .col-2 {
+	width: 47.5%;
+	margin:0 5% 0 0;
+	float: left;
+	font-size: 14px;
+	color:#495057;
+}
+
+.article .columns .col-2:last-child {
+	margin-right: 0;
+}
+
+.article .columns .col-2-2 {
+	float: right;
+}
+
+.article .columns .col-2 strong {
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+	color:#5c7cfa;
+	padding: 0 0 15px 0;
+}
+
+/*
+*/
+
+.process {
+	width: 620px;
+	margin: 100px auto;
+}
+
+.process > h1 {
+	font-size: 22px;
+	font-weight: bold;
+	color:#495057;
+	padding: 0 0 22px 0;
+}
+
+.process dl {
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.process dl + dl {
+	border-top: 1px solid #63e6be;
+}
+
+.process dl dt {
+	float: left;
+	line-height: 1.5;
+	color: #12b886;
+	font-weight: bold;
+}
+
+.process dl dd {
+	margin: 0 0 0 120px;
+	color: #495057;
+	line-height: 1.5;
+}
+
+/*
+*/
+
+.process2 {
+	width: 620px;
+	margin: 100px auto;
+}
+
+.process2 dl {
+	padding: 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.process2 dl dt {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -8px;
+	font-weight: bold;
+}
+
+.process2 dl dd {
+	float: right;
+	width: 560px;
+	line-height: 1.5;
+	color: #fff;
+	background: url(../images/text/comment.png) 0 50% no-repeat;
+	padding: 15px 20px 15px 30px;
+	box-sizing: border-box;
+}
+
+/*
+*/
+
+.process3 {
+	width: 620px;
+	margin: 100px auto;
+}
+
+.process3 dl {
+	padding: 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.process3 dl dt {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -8px;
+	font-weight: bold;
+}
+
+.process3 dl dd {
+	float: right;
+	width: 550px;
+	line-height: 1.5;
+	color: #fff;
+	background: #099268;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.process3 dl dd:before {
+	content:" ";
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid #099268;
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -10px;
+}
+
+/*
+*/
+
+.content {
+	width: 660px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.content .img {
+	width: 180px;
+	height: 180px;
+	float: left;
+	margin:0 20px 0 0;
+	overflow: hidden;
+}
+
+.content .img img {
+	width: 100%;
+	height: auto;
+	transition: all .3s;
+}
+
+.content .inner-content {
+	padding: 0 14px 0 0;
+}
+
+.content .inner-content h1 {
+	font-size: 18px;
+	font-weight: bold;
+	color:#1b6ec2;
+	padding: 0 0 18px 0;
+	line-height: 1.3;
+}
+
+.content .inner-content .text {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0 0 15px 0;
+}
+
+.content .inner-content .meta {
+	font-size: 13px;
+	color:#868e96;
+}
+
+.content a:hover .inner-content h1 {
+	color: #12b886;
+}
+
+.content a:hover .inner-content .text {
+	color: #868e96;
+}
+
+.content a:hover .img img {
+	width: 140%;
+	margin:-20% 0 0 -20%;
+}
+
+.content.border {
+	border: solid 1px #e9ecef;
+}
+
+.content.border .inner-content h1 {
+	padding-top: 20px;
+}
+
+.content.border .inner-content .meta {
+	text-align: right;
+}
+
+.content.border:hover {
+	box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content.alt .img {
+	float: right;
+	margin:0 0 0 20px;
+}
+
+.content.alt .inner-content {
+	padding: 0 0 0 14px;
+}
+
+.content.round {
+	border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

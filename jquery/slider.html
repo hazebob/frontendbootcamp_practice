@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>slider </title>
+	<!-- <link rel="stylesheet" type="text/css" href="../assets/css/flexslider.css"> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="../assets/js/jquery.flexslider.js"></script>
+	<script>
+		// 실행
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				// 옵션
+				animation: 'slide',
+				prevText: "이전",
+				nextText: "다음"
+			});
+		})
+	</script>
+	<style>
+		.flex-direction-nav a:before {display: none;}
+	</style>
+</head>
+<body>
+
+	<div class="flexslider">
+		<ul class="slides">
+			<!-- <li><img src="../assets/images/jquery/demo1.jpg" alt=""></li> -->
+			<li><img src="../assets/images/jquery/demo2.jpg" alt=""></li>
+			<li><img src="../assets/images/jquery/demo3.jpg" alt=""></li>
+			<li><img src="../assets/images/jquery/demo4.jpg" alt=""></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

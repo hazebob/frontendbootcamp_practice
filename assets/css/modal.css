@@ -1,0 +1,97 @@
+@import url('reset.css');
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+@import url('form.css');
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+
+.modal:after {
+	content:" ";
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 0;
+}
+
+.modal-body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	background: #fff;
+	z-index: 1;
+	width: auto;
+	height: auto;
+
+}
+
+.modal .dialog {
+	text-align: center;
+	padding: 40px;
+}
+
+.modal .dialog .msg {
+	font-size: 20px;
+	color: #4a4a4a;
+}
+
+.modal .dialog .buttons {
+	padding: 30px 0 0;
+}
+
+.modal .modal-body header {
+	background: #f8f9fa;
+	overflow: hidden;
+}
+
+.modal .modal-body header h1 {
+	padding: 18px 30px;
+	font-size: 20px;
+	float: left;
+}
+
+.modal .modal-body header .close {
+	float: right;
+}
+
+.modal .modal-body header .close button {
+	border:0;
+	background: none;
+	padding: 18px;
+	margin: 0;
+	font-size: 20px;
+	cursor:pointer;
+}
+
+.modal .modal-body .tutorial {
+	padding: 30px;
+}
+
+.modal .modal-body .tutorial .slides-control {
+	padding: 18px 0 0;
+	text-align: center;
+}
+
+.modal .modal-body .tutorial .slides-control li {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #ced4da;
+	border-radius: 50px;
+	text-indent: -9999px;
+	margin: 0 5px;
+}
+
+.modal .modal-body .tutorial .slides-control li.active {
+	background: #f59f00;
+}
